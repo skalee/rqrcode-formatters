@@ -11,6 +11,7 @@ module RQRCode
 
       def render
         qr.modules.each do |row|
+          concat row_start
           row.each do |cell|
             concat square cell
           end
@@ -20,6 +21,10 @@ module RQRCode
       end
 
     protected
+
+      def row_start
+        ""
+      end
 
       def row_end
         ""
