@@ -1,3 +1,5 @@
+require "rqrcode"
+
 require "rqrcode/formatters/version"
 
 module RQRCode
